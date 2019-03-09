@@ -1,0 +1,4 @@
+
+Msquid:S1481"*Remove this unused "jawna" local variable.(Í½˜½þÿÿÿÿ8æ´‡’–-
+Ksquid:S1604"(Make this anonymous inner class a lambda(Žø¡’ýÿÿÿÿ8®“Š’–-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”ü»æþÿÿÿÿ

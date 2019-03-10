@@ -2,6 +2,7 @@ package _1_Zad1._1_Mowiacy;
 
 import _1_Zad1.Czlowiek;
 import _1_Zad1._0_Kontrakt.IPatrzacy;
+import _1_Zad1._0_Kontrakt.ITworzacy;
 import _1_Zad1._0_Kontrakt.Imowiacy;
 import _1_Zad1._2_Patrzacy.PatrzacyMetodyStatycznej;
 import _1_Zad1._2_Patrzacy.PatrzącyMetodyInstancji;
@@ -29,7 +30,7 @@ public class Main {
         Imowiacy methodRef = Czlowiek::przywitajSię;            //referencje - jeśli tylko betoda nie przyjmuje żadnych argumetnów można ją załatwić referencjami
         methodRef.powiedzCos();
 
-        Imowiacy jawna1 = new MowiacyMetodyInstancji(); // znowu tworzymy "obiekt interfejsu" który tak naprawdę jest obiektem klasy MMI która implementuje interfejs
+        Imowiacy jawna1 = new MowiacyMetodyInstancji(); // znowu tworzymy "zmienna" który tak naprawdę jest obiektem klasy MMI która implementuje interfejs
         jawna1.powiedzCos();                            // wywołujemy metodę interfejsu
         new Czlowiek().ziewnij();                       // wywołujemy metodę instacji ziewnij
 
@@ -103,6 +104,7 @@ public class Main {
         System.out.println( "Implementacja jako referencja metoda dla jawnie stworzonej instancji.");
         IPatrzacy patrzacyReferencjiMetody = jakisczlowiek:: przygladajSie;                //Obiekt interfejsu = obiekt klasy czlowiek utowrzony powyzej i referencja do metody interfejsu
         patrzacyReferencjiMetody.patrzNa("kaszanka");           //wywołanie metody instancji poprzez wywołanie metody interfejsu i podanie parametru
+
 
 
     }

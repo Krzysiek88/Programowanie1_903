@@ -33,6 +33,13 @@ public class Czlowiek implements IPotrafiacyJesc {
         System.out.println( "Jem: " + cos );
 
     }
+
+    @Override
+    public String toString() {
+        return "Czlowiek{" +
+                "imie='" + imie + '\'' +
+                '}';
+    }
 }
 
 

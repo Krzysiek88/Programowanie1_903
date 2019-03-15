@@ -10,10 +10,10 @@ public class MainFunktion {
 
         Pracownik janKowalski = new Pracownik("Jan", "Kowalski");
 
-        //Function<Pracownik, String> inicjaly = pracownik ->
-               // pracownik.getName().charAt(0) + " " + pracownik.getLastname().charAt(0);    //sprawdzic w dokumentacji funkcjonowanie charAt (zwraca inicjaly)
+        Function<Pracownik, String> inicjaly = pracownik ->
+                pracownik.getName().charAt(0) + " " + pracownik.getLastname().charAt(0);    //sprawdzic w dokumentacji funkcjonowanie charAt (zwraca inicjaly)
                                                                                                 //sprawdzic czemu to nie dziala - null pointer
-       // System.out.println(inicjaly.apply(janKowalski));
+        System.out.println(inicjaly.apply(janKowalski));
 
 
         janKowalski.setUrlop(new Urlop(
@@ -22,9 +22,9 @@ public class MainFunktion {
         ));
 
 
-        //Function <Pracownik,Integer> iloscDni= pracownik ->
-          //      Period.between(pracownik.getUrlop().getDataOd(),
-            //            pracownik.getUrlop().getDatado().to
+       // Function <Pracownik,Integer> iloscDni= pracownik ->
+             //   Period.between(pracownik.getUrlop().getDataOd(),
+             //pracownik.getUrlop().getDatado()
 
     }
 

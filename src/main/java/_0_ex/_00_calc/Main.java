@@ -10,5 +10,8 @@ public class Main {
 
         calculator.calculate(2,3,  (x,y) -> x+y );
         calculator.calculate(2,5, (x,y) -> x*y);
+
+
+
     }
 }

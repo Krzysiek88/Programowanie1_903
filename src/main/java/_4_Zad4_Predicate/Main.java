@@ -8,16 +8,16 @@ import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
-        /**Predicate <String> isNotNull = s -> s !=null;//sprawdzamy tylko referencje a nie zawartość Strnga dlatego !=
+        Predicate <String> isNotNull = s -> s !=null;//sprawdzamy tylko referencje a nie zawartość Strnga dlatego !=
         Predicate <String> isNotnull1ref = Objects::nonNull; //metoda z referencja
 
-       // System.out.println(isNotNull.test("safdsad"));
-       // System.out.println(isNotNull.test(null));
-       // System.out.println(isNotNull.test("asfdsdgfdsf"));
-      //  System.out.println(isNotnull1ref.test("dsfdsfsdfdsf"));
-      //  System.out.println(isNotnull1ref.test("dfdsfdsfsdf"));
-       // System.out.println(isNotnull1ref.test(null));
-       // System.out.println(isNotnull1ref.test(""));
+       System.out.println(isNotNull.test("safdsad"));
+       System.out.println(isNotNull.test(null));
+       System.out.println(isNotNull.test("asfdsdgfdsf"));
+       System.out.println(isNotnull1ref.test("dsfdsfsdfdsf"));
+      System.out.println(isNotnull1ref.test("dfdsfdsfsdf"));
+       System.out.println(isNotnull1ref.test(null));
+       System.out.println(isNotnull1ref.test(""));
 
 
 
@@ -40,7 +40,7 @@ public class Main {
         System.out.println(or.test("sdfsdfdsf"));
         System.out.println(or.test(""));
         System.out.println(or.test(null));      //tu będzie nullPointer bo zawsze musi sprawdzić czy "or" czy drugi jest prawdą
-*/
+
         Function<String, Czlowiek> nameToHuman = name -> new Czlowiek(name);
         Function<String, Czlowiek> nameToHumanRef = Czlowiek::new;
         System.out.println(nameToHuman.apply("Janek"));

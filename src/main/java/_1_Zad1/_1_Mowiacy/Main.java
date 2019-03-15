@@ -75,6 +75,13 @@ public class Main {
         IPatrzacy ref3 = Czlowiek ::zerknijNa;
         ref3.patrzNa("kabanos" );
 
+        ITworzacy nowy = Czlowiek -> new Czlowiek();
+        //nowy.stworz("KArol");
+       // nowy.stworz("Marek");
+        //nowy.stworz("Michal");
+        //System.out.println(nowy);
+
+
 
 
        IPatrzacy jawna3 = new PatrzącyMetodyInstancji();
@@ -104,6 +111,9 @@ public class Main {
         System.out.println( "Implementacja jako referencja metoda dla jawnie stworzonej instancji.");
         IPatrzacy patrzacyReferencjiMetody = jakisczlowiek:: przygladajSie;                //Obiekt interfejsu = obiekt klasy czlowiek utowrzony powyzej i referencja do metody interfejsu
         patrzacyReferencjiMetody.patrzNa("kaszanka");           //wywołanie metody instancji poprzez wywołanie metody interfejsu i podanie parametru
+
+
+
 
 
 

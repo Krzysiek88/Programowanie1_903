@@ -28,6 +28,7 @@ public class Czlowiek implements IPotrafiacyJesc {
     }
 
 
+
     @Override
     public void jedz(String cos) {
         System.out.println( "Jem: " + cos );
